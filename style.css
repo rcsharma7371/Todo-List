@@ -1,0 +1,88 @@
+body{
+    background:linear-gradient(to right bottom,rgb(108, 108, 212),rgb(156, 122, 156));
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.main-content{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    /* align-content: center; */
+    /* align-self: center; */
+    width: 100%;
+    height: 100%;
+
+}
+.task{
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 14px;
+    height: 50%;
+    width: 25%;
+    background-color: rgba(207, 205, 205,0.4);
+    overflow: auto;
+    
+}
+.task > h2 {
+    color: rgb(18, 18, 37);
+    font-size: 1.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+
+#task{
+    /* outline: rgb(86, 86, 193); */
+    padding: 12px;
+    border-radius: 20px;
+    width: 85%;
+    z-index: 1;
+    display: inline;
+    border: 2px solid blueviolet;
+    /* outline: 2PX solid rgb(29, 29, 53); */
+}
+ul > li {
+    display: block;
+}
+.check{
+    display: inline;
+    padding-inline: 10px;
+}
+.add{
+    width: 30%;
+    padding: 5px;
+    border-radius: 20px;
+    /* z-index: 2; */
+    margin-left: -125px;
+    background-color: rgb(179, 151, 205);
+    font-weight: 700;
+    color: rgb(19, 0, 36);
+    outline: 2px solid blueviolet;
+    text-align: center;
+
+}
+.done{
+    /* background-color: rgb(38, 136, 38); */
+    text-decoration: line-through;
+}
+.delete {
+    all: unset; /* Remove all inherited and default styles */
+    display: inline-block; /* Ensure it behaves like a button */
+    cursor: pointer; /* Add a pointer cursor */
+}
+.filter{
+    margin-top: 5px;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.filter > button {
+    border-radius: 10px;
+    font-size: 1rem;
+}

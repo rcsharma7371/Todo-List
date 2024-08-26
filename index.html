@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do List</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="main-content">
+        <div class="task">
+            <h2>To-do List</h2>
+            <input type="text" name="task" id="task" placeholder="Add your task" autofocus>
+            <button class="add">ADD</button>
+            <div class="filter">
+                <button class="all">All</button>
+                <button class="complete">Completed</button>
+                <button class="pending">Pending</button>
+            </div>
+            <div class="scroll">
+                <ul class="itemList">
+                    <li><input type="checkbox" class="check"> Morning walk <button class="delete"><i class="fa-solid fa-trash"></i></button></li>
+                    <li><input type="checkbox" class="check"> Go to temple <button class="delete"><i class="fa-solid fa-trash"></i></button></li>
+                </ul>
+
+            </div>
+        </div>
+        <div class="heading">
+            <h1>Build <span>To-do </span> List</h1>
+            <h3>with JavaScript</h3>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
